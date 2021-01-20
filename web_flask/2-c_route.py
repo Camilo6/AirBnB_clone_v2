@@ -18,10 +18,10 @@ def hbn():
     return 'HBNB'
 
 
-@app.route("/c/<string:argument>", methods=["GET"], strict_slashes=False)
-def cisfun(argument):
+@app.route("/c/<string:text>", methods=["GET"], strict_slashes=False)
+def cisfun(text):
     """return C ..."""
-    return 'C {}'.format(argument.replace("_", " "))
+    return 'C {}'.format(text.replace("_", " "))
 
 
 if __name__ == '__main__':
