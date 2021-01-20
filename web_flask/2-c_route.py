@@ -19,7 +19,7 @@ def hbn():
 
 
 @app.route("/c/<string:text>", methods=["GET"], strict_slashes=False)
-def cisfun(text):
+def croute(text):
     """return C ..."""
     return 'C {}'.format(text.replace("_", " "))
 

@@ -23,13 +23,13 @@ def croute(text):
     """return C ..."""
     return 'C {}'.format(text.replace("_", " "))
 
+
 @app.route("/python", defaults={"text": "is cool"}, methods=["GET"],
            strict_slashes=False)
 @app.route("/python/<string:text>", methods=["GET"], strict_slashes=False)
 def pythonroute(text):
-    """return C ..."""
+    """return Python ..."""
     return 'Python {}'.format(text.replace("_", " "))
-
 
 
 if __name__ == '__main__':
